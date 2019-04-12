@@ -1,2 +1,1 @@
-# i3wm
-my i3 config file
+#sup guys these are my dot files , config files and personal prefrences files
