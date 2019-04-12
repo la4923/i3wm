@@ -1,12 +1,6 @@
-exec --not-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id dex -a
-exec --no-startup-id dunst -config ~/.dunstrc
-exec --no-startup-id unclutter -root
-exec --no-startup-id feh --bg-fill ~/tmp/lowpoly6.jpg
-exec --no-startup-id compton -b --config ~/.comptonrc
-
-# start spacefm in daemon mode
-exec --no-startup-id spacefm -d
+##################
+###salty config###
+##################
 
 #font#
 set $font_i3 -*-terminus-medium-*-*-*-*-160-*-*-*-*-*-*
@@ -165,8 +159,7 @@ bindsym XF86AudioPrev exec playerctl previous
 ###display###
 exec_always sh dis.sh
 
-##mouse##
-exec_always xinput --set-prop 10 'libinput Accel Speed' -1
+
 
 #conky#
 exec_always sh conky-startup.sh
@@ -174,11 +167,19 @@ exec_always sh conky-startup.sh
 #dpi#
 exec_always xrandr --dpi 90
 
+#dmenu#
+exec_always dmenu
+
 bar {
         position        top
         font            $font_i3
     	     
  }
 
+
 #####wallpaper etc#######
-exec_always feh --bg-fill /home/liam/Pictures/9.jpg
+exec_always feh --bg-fill /home/liam/Pictures/5.jpg
+
+
+
+
